@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "sourceMap": true,
+    "declaration": false,
+    "target": "es5",
+    "module": "esnext",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": false,
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "moduleResolution": "node",
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "noImplicitReturns": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "removeComments": true,
+    "strictNullChecks": false
+  },
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "angularCompilerOptions": {
+    "annotateForClosureCompiler": false,
+    "enableIvy": true,
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true,
+    "trace": false
+  }
+}

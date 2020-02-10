@@ -1,0 +1,39 @@
+{
+  "name": "slido-admin",
+  "version": "30.3.0",
+  "description": "Admin",
+  "main": "app/index.js",
+  "repository": "https://bitbucket.org/instando/slido-admin.git",
+  "scripts": {
+    "build": "export NODE_ENV=production && node --max_old_space_size=10092 ./node_modules/webpack/bin/webpack.js --progress --colors --mode=production",
+    "compodoc": "./node_modules/.bin/compodoc -p tsconfig.json",
+    "start": "export NODE_ENV=development && node --max_old_space_size=10092 ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --progress --colors --mode=development",
+    "test": "cross-env NODE_ENV=test karma start",
+    "eslint": "eslint --fix --ext ts --cache --cache-location node_modules/.cache/.eslintcache ./app"
+  },
+  "dependencies": {
+    "@angular-devkit/build-optimizer": "^0.900.1",
+    "@angular-devkit/schematics": "^9.0.1",
+    "@angular/animations": "^9.0.0",
+    "@angular/cdk": "^9.0.0",
+    "@angular/cli": "^9.0.1",
+    "@angular/common": "^9.0.0",
+    "@angular/compiler": "^9.0.0",
+    "@angular/compiler-cli": "^9.0.0",
+    "@angular/core": "^9.0.0",
+    "@angular/elements": "^9.0.0",
+    "@angular/forms": "^9.0.0",
+    "@angular/material": "^9.0.0",
+    "@angular/material-moment-adapter": "^9.0.0",
+    "@angular/platform-browser": "^9.0.0",
+    "@angular/platform-browser-dynamic": "^9.0.0",
+    "@ngtools/webpack": "^9.0.1",
+    "@types/node": "^12.12.21",
+    "angular2-template-loader": "^0.6.2",
+    "html-webpack-plugin": "^3.2.0",
+    "typescript": "^3.7.5",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
